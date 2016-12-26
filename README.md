@@ -1,13 +1,26 @@
-FoodCatalogSample  
- 
+# FoodCatalogSample
  Simple catalog application (MVP pattern) 
  
- Main tasks: 
-1.	parsing XML;
-2.	saving and retrieving data with SQLite
-3.	working with GoogleMap.
+## <a name="Main tasks"></a>Main tasks  
+*   Parsing XML
+*   Saving and retrieving data with SQLite
+*   Working with GoogleMap
  
- Used external libraries:
- RxJava, RxAndroid, SQLBrite, SQLDelight, Dagger, Retrofit, Nucleus, Dexter, Picasso, ButterKnife, IcePick, Autovalue.
+ ## <a name="Used external libraries"></a>Used external libraries
+*   [RxJava](https://github.com/ReactiveX/RxJava)
+*   [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+*   [Dagger](https://github.com/google/dagger)
+*   [Retrofit](https://github.com/square/retrofit)
+*   [SimpleXML](https://github.com/marcelnicolay/simplexml)
+*   [SQLBrite](https://github.com/square/sqlbrite)
+*   [SQLDelight](https://github.com/square/sqldelight)
+*   [ButterKnife](https://github.com/JakeWharton/butterknife)
+*   [IcePick](https://github.com/frankiesardo/icepick)
+*   [Nucleus](https://github.com/konmik/nucleus)
+*   [Dexter](https://github.com/Karumi/Dexter)
+*   [Picasso](https://github.com/square/picasso)
+*   [Autovalue](https://github.com/google/auto/tree/master/value)
+
+
 
  
