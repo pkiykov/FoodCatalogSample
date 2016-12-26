@@ -1,0 +1,13 @@
+CREATE TABLE category (
+    _id INTEGER NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    image TEXT
+);
+
+insert_category:
+INSERT OR REPLACE INTO category (_id, name, image)
+VALUES (?, ?, ?);
+
+select_all:
+SELECT *
+FROM category;

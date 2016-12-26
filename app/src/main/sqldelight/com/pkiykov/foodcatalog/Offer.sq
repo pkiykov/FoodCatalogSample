@@ -1,0 +1,30 @@
+CREATE TABLE offer (
+  _id INTEGER NOT NULL PRIMARY KEY,
+  name TEXT NOT NULL,
+  description TEXT,
+  picture TEXT,
+  price REAL,
+  categoryId INTEGER NOT NULL,
+  weight TEXT
+);
+
+index_1:
+CREATE UNIQUE INDEX i1 ON offer(_id);
+
+insert_offer:
+INSERT OR REPLACE INTO offer (_id, name, description, picture, price, categoryId, weight)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+select_all:
+SELECT *
+FROM offer;
+
+select_offer_by_category:
+SELECT *
+FROM offer
+WHERE offer.categoryId = ?;
+
+select_offer_by_id:
+SELECT *
+FROM offer
+WHERE offer._id = ?;

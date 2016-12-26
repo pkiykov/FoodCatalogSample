@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FoodCatalog</string>
+    <string name="category_image">Изображение категории</string>
+    <string name="dish_image">Изображение блюда</string>
+    <string name="endpoint">http://ufa.farfor.ru/</string>
+    <string name="loading_failed">Ошибка загрузки данных!</string>
+    <string name="company_title">СуперФуд</string>
+    <string name="contacts">г. Минск, ул. Алеся Бачило, д.9
+        \nТелефоны:
+        \n+375291234567
+        \n+375297654321
+        \nпочта:shabany@zbspizza.by
+    \n\nвремя работы: \n24/7 с перерывами на завтрак обед и ужин
+    </string>
+    <string name="extra_text">The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant! The bset restaurant!</string>
+    <string name="we_are_here">Мы здесь!</string>
+    <string name="weight">Вес</string>
+    <string-array name="fragments_drawer">
+        <item>Каталог</item>
+        <item>Контакты</item>
+    </string-array>
+    <string name="open_drawer">Открыть выдвижную панель</string>
+    <string name="close_drawer">Закрыть выдвижную панель</string>
+    <string name="permission_location_message">Определение Вашего местоположения позволит нам шпионить за Вами и облегчит работу спецслужб</string>
+    <string name="failed_to_load_catalog">Ошибка загрузки. Проверьте интернет соединение</string>
+    <string name="currency">₽</string>
+    <string name="connection_problem">Соединение с сервером отсутствует</string>
+    <string name="database_not_exist">База данных пуста</string>
+</resources>
