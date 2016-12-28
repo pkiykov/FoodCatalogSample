@@ -62,12 +62,12 @@ public class MainActivity extends NucleusAppCompatActivity<MainActivityPresenter
     protected void onCreate(Bundle savedInstanceState) {
         setupComponent();
         setUpPresenter();
+        Dexter.continuePendingRequestsIfPossible(permissionsListener);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         setTitle(R.string.company_title);
-        Dexter.continuePendingRequestsIfPossible(permissionsListener);
         setUpDrawer();
         if (getFragmentManager().getBackStackEntryCount() == 0)
             showLoading(true);
