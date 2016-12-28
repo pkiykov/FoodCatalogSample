@@ -101,20 +101,19 @@ public class MapFragment extends Fragment {
                 googleMap.setMapType(mapStateManager.getSavedMapType());
             } else {
                 LatLng minsk = new LatLng(MINSK_LATITUDE, MINSK_LONGITUDE);
-                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(minsk, ZOOM));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(restaurant));
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(minsk, ZOOM));
             }
 
             if (ActivityCompat.checkSelfPermission(getActivity(),
                     Manifest.permission.ACCESS_FINE_LOCATION)
-                    != PackageManager.PERMISSION_GRANTED
-                    && ActivityCompat.checkSelfPermission(
+                    == PackageManager.PERMISSION_GRANTED
+                    || ActivityCompat.checkSelfPermission(
                     getActivity(),
                     Manifest.permission.ACCESS_COARSE_LOCATION)
-                    != PackageManager.PERMISSION_GRANTED) {
-                return;
+                    == PackageManager.PERMISSION_GRANTED) {
+                googleMap.setMyLocationEnabled(true);
             }
-            googleMap.setMyLocationEnabled(true);
         });
     }
 
